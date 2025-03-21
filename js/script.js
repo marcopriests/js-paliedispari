@@ -33,10 +33,23 @@ function randomNum() {
     return result
 }
 
-function playOddsAndEvens(x, y) {
-    let sum = x + y
+function playOddsAndEvens(user, cpu, choice) {
+    let sum = user + cpu
 
-    return sum
+    if (sum % 2 == 0 && choice.toLowerCase() == "pari") {
+        
+        return "Hai vinto! La somma del tuo numero " + user + " e quello del tuo avversario " + cpu + " è PARI!"
+
+    } else if (sum % 2 != 0 && choice.toLowerCase() == "dispari") {
+
+        return "Hai vinto! La somma del tuo numero " + user + " e quello del tuo avversario " + cpu + " è DISPARI!"
+        
+    } else {
+
+        return "Mi dispiace, hai perso... La somma dei due numeri è " + sum
+
+    }
+
 }
 
 
@@ -44,7 +57,6 @@ const userChoice = prompt("scegli pari o dispari?")
 const userNum = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"))
 const cpuNum = randomNum()
 
+console.log(userNum, cpuNum, userChoice)
 
-console.log(userChoice, userNum, cpuNum)
-
-console.log(playOddsAndEvens(3, 4))
+console.log(playOddsAndEvens(userNum, cpuNum, userChoice))
