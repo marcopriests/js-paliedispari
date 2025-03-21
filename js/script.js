@@ -11,17 +11,17 @@ function isPalindrome(string) {
 
     if (string.toLowerCase() == reverseWord.toLowerCase()) {
         
-        return true
+        return "SI, la parola " + string.toLowerCase() + " risulta essere palindroma"
 
     } else {
 
-        return false
+        return "la parola " + string.toLowerCase() + " NON risulta essere palindroma"
 
     }
 
 
 }
 
-let test = "anna"
+let userWord = prompt("Inserisci la parola che vuoi controllare")
 
-console.log(isPalindrome(test))
+console.log(isPalindrome(userWord))
