@@ -54,8 +54,15 @@ function playOddsAndEvens(user, cpu, choice) {
 
 
 const userChoice = prompt("scegli pari o dispari?")
-const userNum = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"))
+let userNum = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"))
 const cpuNum = randomNum()
+
+//bonus
+while (userNum > 5 || userNum <= 0) {
+    userNum = parseInt(prompt("Il valore inserito non va bene. Inserisci un numero compreso tra 1 e 5"))
+}
+
+
 
 console.log(userNum, cpuNum, userChoice)
 

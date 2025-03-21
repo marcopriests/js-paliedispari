@@ -66,3 +66,7 @@ Ragionamento Pari e Dispari:
 - dichiaro e inizializzo una variabile "cpuNum" in cui assegno la funzione randomNum()
 
 - Infine richiamo la funzione playOddsAndEvens(userNum, cpuNum)
+
+Bonus:
+
+- effettuo un controllo per verificare che il numero inserito dall'utente sia compreso tra 1 e 5
