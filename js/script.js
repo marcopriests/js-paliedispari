@@ -5,8 +5,14 @@ function isPalindrome(string) {
 
     for (let i = string.length - 1; i >= 0; i--) {
         
-        
+        reverseWord += string[i]
 
     }
 
+    return reverseWord
+
 }
+
+let test = "peppe"
+
+console.log(isPalindrome(test))
