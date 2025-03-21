@@ -46,7 +46,7 @@ function playOddsAndEvens(user, cpu, choice) {
         
     } else {
 
-        return "Mi dispiace, hai perso... La somma dei due numeri è " + sum
+        return "Mi dispiace, hai perso... La somma dei due numeri è " + sum + " e quindi non è " + choice.toUpperCase()
 
     }
 
