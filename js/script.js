@@ -25,3 +25,5 @@ function isPalindrome(string) {
 let userWord = prompt("Inserisci la parola che vuoi controllare")
 
 console.log(isPalindrome(userWord))
+
+//PARI E DISPARI
