@@ -9,10 +9,19 @@ function isPalindrome(string) {
 
     }
 
-    return reverseWord
+    if (string.toLowerCase() == reverseWord.toLowerCase()) {
+        
+        return true
+
+    } else {
+
+        return false
+
+    }
+
 
 }
 
-let test = "peppe"
+let test = "anna"
 
 console.log(isPalindrome(test))
