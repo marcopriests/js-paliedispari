@@ -33,8 +33,6 @@ function randomNum() {
     return result
 }
 
-console.log(randomNum())
-
 function playOddsAndEvens(x, y) {
     let sum = x + y
 
@@ -42,6 +40,11 @@ function playOddsAndEvens(x, y) {
 }
 
 
-const userChoice
+const userChoice = prompt("scegli pari o dispari?")
+const userNum = parseInt(prompt("Inserisci un numero compreso tra 1 e 5"))
+const cpuNum = randomNum()
+
+
+console.log(userChoice, userNum, cpuNum)
 
 console.log(playOddsAndEvens(3, 4))
