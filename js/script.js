@@ -34,3 +34,12 @@ function randomNum() {
 }
 
 console.log(randomNum())
+
+function playOddsAndEvens(x, y) {
+    let sum = x + y
+
+    return sum
+}
+
+
+console.log(playOddsAndEvens(3, 4))
