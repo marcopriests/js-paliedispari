@@ -25,3 +25,17 @@ Domande da farsi quando si crea una funzione:
     Se sì, di che tipo?
 
 Buon lavoro e buon divertimento!
+
+Ragionamento Palindroma:
+
+- creo la funzione con parametro stringa: isPalindrome(string)
+    - al suo interno, creo una variabile "reverseWord" e la inizializzo come una stringa vuota.
+    - creo un ciclo
+        - assegno all'indice del ciclo le seguenti impostazioni:
+            - let i = string.length - 1; per far si che i sia uguale al numero di lettere contenure nella parola da controllare
+            - i >= 0; per far si che il ciclo continui finché non controlli tutte le lettere della parola
+            - i--; per far si che il ciclo proceda dall'ultima lettera della parola inserita alla prima
+        - all'interno del ciclo, concateno "reverseWord" creata in precedenza con tutte le singole lettere della parola inserita al contrario
+    - fuori dal ciclo, effettuo un controllo per verificare se la parola inserita dall'utente e "reverseWord" combaciano
+        - se si, inserirco return true
+        - se no, inserisco return false
