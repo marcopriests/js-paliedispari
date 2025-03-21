@@ -42,4 +42,6 @@ function playOddsAndEvens(x, y) {
 }
 
 
+const userChoice
+
 console.log(playOddsAndEvens(3, 4))

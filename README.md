@@ -53,13 +53,13 @@ Ragionamento Pari e Dispari:
     - all'interno della funzione dichiaro una variabile "result" in cui assegno un valore numerico randomico compreso tra 1 e 5 utilizando Math.floor(Math.random() * 5 + 1)
     - inserisco un return di result
 
-- creo una funzione playOddsAndEvens(x, y)
-    - all'interno della funzione assegno la somma delle variabili x + y ad una nuova variabile "sum"
-    - inserisco un controllo per verificare se sum % 2 == 0 && se userChoise.toLowerCase() == "pari"
-        - se si, stampo il messaggio: "Hai vinto! La somma del tuo numero " + x + " e quello del tuo avversario " + y + " è PARI!"
-    - altrimenti se sum % 2 != 0 && se userChoice.toLowerCase() == "dispari"
-        se si, stampo il messaggio: "Hai vinto! La somma del tuo numero " + x + " e quello del tuo avversario " + y + " è DISPARI!"
-    - altrimenti stampo il messaggio: "Mi dispiace, hai perso..."
+- creo una funzione playOddsAndEvens(user, cpu, choice)
+    - all'interno della funzione assegno la somma delle variabili user + cpu ad una nuova variabile "sum"
+    - inserisco un controllo per verificare se sum % 2 == 0 && se choice.toLowerCase() == "pari"
+        - se si, stampo il messaggio: "Hai vinto! La somma del tuo numero " + user + " e quello del tuo avversario " + cpu + " è PARI!"
+    - altrimenti se sum % 2 != 0 && se choice.toLowerCase() == "dispari"
+        se si, stampo il messaggio: "Hai vinto! La somma del tuo numero " + user + " e quello del tuo avversario " + cpu + " è DISPARI!"
+    - altrimenti stampo il messaggio: "Mi dispiace, hai perso... La somma dei due numeri è " + sum
 
 - dichiaro e inizializzo una variabile "userChoice" in cui assegno la scelta dell'utente
 - dichiaro e inizializzo una variabile "userNum" in cui assegno il numero scelto dall'utente
