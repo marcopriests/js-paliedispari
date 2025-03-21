@@ -39,3 +39,7 @@ Ragionamento Palindroma:
     - fuori dal ciclo, effettuo un controllo per verificare se la parola inserita dall'utente e "reverseWord" combaciano
         - se si, inserirco return true
         - se no, inserisco return false
+
+- dichiaro e inizializzo una variabile "userWord" in cui salverò la parola inserita dall'utente utilizzando prompt()
+
+- richiamo la funzione isPalindrome(userWord)
